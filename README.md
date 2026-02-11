@@ -1,53 +1,24 @@
-Project Title
+# todo-api-backend
 
-Task Management REST API
+A production-ready Task Management REST API built with Django REST Framework. Features include JWT authentication, user-specific permissions, task CRUD operations, filtering, ordering, pagination, and secure backend architecture. Designed as a portfolio project for backend developer roles.
 
-📖 Description
+## Features
+- JWT Authentication
+- User specific tasks
+- CRUD operations
+- Filtering & Ordering
+- Pagination
 
-A backend RESTful API built using Django REST Framework that allows users to manage personal tasks with JWT authentication, filtering, ordering, and pagination.
+## Tech Stack
+- Python
+- Django
+- Django REST Framework
+- SimpleJWT
 
-🚀 Features
+## Setup
 
-User authentication using JWT
-
-Create, update, delete, and view tasks
-
-Each user can access only their own tasks
-
-Filter by status and priority
-
-Order by created date and due date
-
-Pagination support
-
-🛠 Tech Stack
-
-Python
-
-Django
-
-Django REST Framework
-
-Simple JWT
-
-SQLite (default DB)
-
-⚙️ Installation
-git clone <your-repo-url>
-cd todo_api
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py createsuperuser
+pip install -r requirements.txt  
+python manage.py migrate  
+python manage.py createsuperuser  
 python manage.py runserver
 
-🔐 Authentication
-POST /api/token/
-POST /api/token/refresh/
-
-📌 Endpoints
-GET    /api/tasks/
-POST   /api/tasks/
-PUT    /api/tasks/{id}/
-DELETE /api/tasks/{id}/
