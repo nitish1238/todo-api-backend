@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-z@xyu*oncdafycn8xp40g1ua^%8hndunj98!wyqk0ls3bg+)kc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -140,5 +140,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 3,
 }
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 
 
