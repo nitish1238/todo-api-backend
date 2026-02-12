@@ -27,9 +27,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'todo-api-backend-2.onrender.com',
-    # ... any other domains you want to allow
+    'localhost',
+    '127.0.0.1',
 ]
-
 
 
 # Application definition
