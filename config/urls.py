@@ -22,6 +22,7 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
+
 # Home page
 def home(request):
     return HttpResponse("API Running Successfully")
