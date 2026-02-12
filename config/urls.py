@@ -30,6 +30,7 @@ def home(request):
 urlpatterns = [
     path("", home),   # 👈 ADD THIS LINE
     path("admin/", admin.site.urls),
+    path("api/users/", include("users.urls")),
     path("api/", include("tasks.urls")),
     path("api/token/", TokenObtainPairView.as_view()),
     path("api/token/refresh/", TokenRefreshView.as_view()),
