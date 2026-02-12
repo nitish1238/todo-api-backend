@@ -26,11 +26,9 @@ SECRET_KEY = 'django-insecure-z@xyu*oncdafycn8xp40g1ua^%8hndunj98!wyqk0ls3bg+)kc
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    "todo-api-backend-2.onrender.com",
+    'todo-api-backend-2.onrender.com',
+    # ... any other domains you want to allow
 ]
-
 
 
 
